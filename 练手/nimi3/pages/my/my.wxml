@@ -1,0 +1,38 @@
+<!--pages/my/my.wxml-->
+<view class="index">
+	<!-- 首图 -->
+	<view class="index-navs">
+		<image src="/pages/image/my-1.jpg" mode="widthFix"></image>
+	</view>
+	<!-- 首图 end -->
+
+	<!-- 在线查询 -->
+	<view class="index-onlinefind">
+		<!-- 表单 -->
+		<view class="title">在线查询</view>
+		<lin-form name="loginForm" bind:linsubmit="submit" l-form-btn-class="l-form-btn-class">
+			<lin-form-item label="被保人姓名:" name="loginFormLoginId" rules="{{loginForm.loginIdRules}}">
+				<l-input id="loginFormLoginId" value="{{loginForm.loginId}}" hide-label show-row="{{false}}" />
+			</lin-form-item>
+
+			<lin-form-item label="保单号:" name="loginFormPassword" rules="{{loginForm.passwordRules}}">
+				<l-input id="loginFormPassword" value="{{loginForm.password}}" hide-label show-row="{{false}}" />
+			</lin-form-item>
+
+			<lin-form-item label="被保人证件号:" name="loginFormPassword" rules="{{loginForm.passwordRules}}">
+				<l-input id="loginFormPassword" value="{{loginForm.password}}" hide-label show-row="{{false}}" />
+			</lin-form-item>
+
+			<view slot="submit">
+				<lin-button type="success">查询</lin-button>
+			</view>
+		</lin-form>
+		<!-- 表单 end -->
+		<!-- 地图 -->
+		<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" circles="{{circles}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: {{view.Height}}px;"></map>
+		<!-- 地图 end -->
+	</view>
+	<!-- 在线查询 end -->
+
+
+</view>

@@ -1,0 +1,39 @@
+<!--pages/serve/serve.wxml-->
+<view class="index">
+    <view class="header">
+        <image mode="widthFix" src="/pages/image/fuwu-1.jpg"></image>
+        <view class="jianjie">
+            <view>打造四位一体商业模式</view>
+            <view>全面推进大健康、大民生、大幸福工程建设。</view>
+        </view>
+    </view>
+    <!-- 保险推荐 -->
+    <view class="content">
+        <view class="title">保险推荐</view>
+        <view class="card">
+          <lin-card type="cover" 
+            image="/pages/image/fuwu-2.png"
+            title="医疗健康">
+            <view class="cont">工作生活全面保障</view>
+        </lin-card>
+        <lin-card type="cover" 
+            image="/pages/image/fuwu-3.png"
+            title="子女教育"
+            >
+            <view class="cont">有一人购买主险，子女获益</view>
+        </lin-card>
+        <lin-card type="cover" 
+            image="/pages/image/fuwu-4.png"
+            title="养老储蓄">
+            <view class="cont">百万任我行，安全我担保</view>
+        </lin-card>
+        <lin-card type="cover" 
+            image="/pages/image/fuwu-5.png"
+            title="出行意外">
+            <view class="cont">工作生活全面保障</view>
+        </lin-card>
+        </view>
+        
+
+    </view>
+</view>

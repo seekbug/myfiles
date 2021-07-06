@@ -1,0 +1,11 @@
+<!-- 地图-->
+<view bindtap="nav">
+        <text>导航</text>
+      <!-- </view> -->
+</view>
+
+<!-- 授权登录 -->
+<button class='bottom' size="small" type='default' bindgetuserinfo="bindGetUserInfo" open-type="getUserInfo">点击授权</button>
+
+
+

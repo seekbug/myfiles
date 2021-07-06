@@ -1,0 +1,133 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.14.0",
+  "appid": "wxa3dc2547787b047a",
+  "projectname": "%E5%AE%8C%E7%BE%8E%E4%BC%98%E8%B4%AD",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "分类页面",
+          "pathName": "pages/category/category",
+          "query": "cid=6",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/category/category",
+          "query": "cid=7",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "商品列表",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "cid=3",
+          "scene": null
+        },
+        {
+          "name": "商品详情",
+          "pathName": "pages/goods_detail/goods_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/category/category",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/feedback/feedback",
+          "pathName": "pages/feedback/feedback",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goods_list/goods_list",
+          "pathName": "pages/goods_list/goods_list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/order/order",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/collect/collect",
+          "pathName": "pages/collect/collect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/pay/pay",
+          "pathName": "pages/pay/pay",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,180 @@
+/**index.wxss**/
+  page{
+    background-color: #F0F0F0;
+  }
+.container{
+  width: 100%;
+  height: 100%;
+}
+swiper{
+  width: 100%;
+  height: 350rpx;
+  margin-bottom: 10rpx;
+}
+navigator{
+  margin: 10rpx;
+}
+swiper image{
+  width: 100%;
+  border-radius: 30rpx;
+  box-shadow: 1px 5px 10px rgba(139, 137, 137, 0.8);
+
+}
+/* 服务 */
+.index-serve{
+  background-color: #fff;
+  padding-top:40rpx;
+  padding-bottom: 30rpx;
+  width: 100%;
+  min-height: 200rpx;
+ text-align: center;
+}
+ .title{
+ font-weight: 600;
+}
+.i-title{
+ color: #82E0D6;
+ margin-top: 10rpx;
+ margin-bottom: 30rpx;
+ font-size: 24rpx;
+ font-weight: 600;
+}
+/* 图标设置 */
+.item-box .iconfont{
+ font-size: 60rpx;
+}
+.index-serve .index-item{
+  display: flex;
+  justify-content: center;
+  padding-top: 30rpx;
+  font-size: 20rpx;
+}
+.li{
+  margin-left: 45rpx;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 50%;
+ background-color: #82E0D6;
+}
+.index-item .item-box{
+  width: 25%;
+}
+.item-box .cont{
+  margin-top: 10rpx;
+}
+.index-seach{
+  width: 100%;
+  margin: 40rpx 0;
+  padding-left: 14%;
+}
+.index-my{
+  padding: 35rpx;
+  width: 100%;
+  min-height: 100rpx;
+  background-color: #fff;
+}
+.index-my .i-title{
+  margin-bottom: 15rpx;
+}
+.btn{
+  margin-top: 30rpx;
+}
+.btn lin-button{
+  margin-top: 20rpx;
+}
+.index-select{
+  width: 100%;
+  min-height: 100rpx;
+  background-color: #fff;
+  padding: 0 35rpx;
+  padding-top: 50rpx;
+}
+.index-chanye,.index-chanye,.index-hezuo{
+  width: 100%;
+  min-height: 100rpx;
+  background-color: #fff;
+  padding: 0 35rpx;
+  padding-top: 50rpx;
+}
+.index-tuandui{
+  position: relative;
+  width: 100%;
+  min-height: 100rpx;
+  background-color: #fff;
+  padding-top: 50rpx;
+}
+.content{
+  padding: 0 35rpx;
+}
+.index-card{
+  margin-top: 30rpx;
+  display: flex;
+  height: 500rpx;
+  width: 1000rpx;
+  font-size: 24rpx;
+}
+.index-card .a{
+  padding: 0;
+}
+lin-card{
+  width:300rpx;
+}
+
+/* 企业团队 */
+.index-tuandui{
+ text-align: center;
+}
+.img{
+  margin-top: 100rpx;
+  width: 100%;
+}
+image{
+  width: 100%;
+  height: 300rpx;
+}
+.msg{
+  width: 100%;
+  height: 200rpx;
+  background-color: #1F3F68;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #06BEAD;
+  position: absolute;
+  left: 0;
+  top: 800rpx;
+}
+.msg-1{
+  width: 33.33%;
+}
+.names{
+  font-size: 20rpx;
+  color: #fff;
+  margin-top: 20rpx;
+}
+/* 聊天页面 */
+.liaotian{
+  width: 100%;
+  height: 500rpx;
+  background-color: #06C1AE;
+}
+/* 合作品牌 */
+.logo{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+  width: 800rpx;
+
+}
+.logo image{
+  width: 300rpx;
+  margin-right: 20rpx;
+}
+.logo .last{
+  margin-right: 0;
+}
+.index-hezuo{
+  padding-bottom: 35rpx;
+}
+

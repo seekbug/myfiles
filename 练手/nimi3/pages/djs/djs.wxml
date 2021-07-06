@@ -1,0 +1,3 @@
+<canvas canvas-id='customCanvas'></canvas>
+
+<button bindtap="createCanvas" wx:if="{{uu}}">生成图片</button>

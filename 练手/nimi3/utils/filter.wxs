@@ -1,0 +1,11 @@
+  // 封装过滤器
+ var filterData = function(value,array){
+    for(var i = 0;i<array.length;i++){
+      if(value = array[i].id){
+        return array[i].item
+      }
+    }
+  }
+  module.exports = {
+    filterData:filterData
+  }

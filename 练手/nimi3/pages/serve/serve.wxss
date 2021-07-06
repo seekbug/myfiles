@@ -1,0 +1,38 @@
+/* pages/serve/serve.wxss */
+.index{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60rpx;
+}
+.header image{
+  width: 100%;
+}
+.header .jianjie{
+  padding-top: 30rpx;
+  text-align: center;
+  width: 100%;
+  height: 200rpx;
+  background-color: #1F3F68;
+}
+/* 保险推荐 */
+.content .title{
+  padding-left: 30rpx;
+  font-weight: 600;
+}
+.cont{
+  font-size: 24rpx;
+}
+.content image{
+  width: 100%;
+}
+.card{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  padding-left: 30rpx;
+
+}
+lin-card{
+  width: 50%;
+  margin-top: 45rpx;
+}

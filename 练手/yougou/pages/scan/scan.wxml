@@ -1,0 +1,30 @@
+ <!-- 上传图片功能 -->
+
+<view class="uploader">
+  <view class="uploader-text">相册</view>
+  <view class="uploade-box">
+    <!-- 上传成功的图片+单选框+删除按钮显示 -->
+    <view class="uploader-showItem" wx:for="{{imagesList}}" wx:key="id">
+      <!-- 图片 -->
+      <view class="showItem-image" data-current="{{item.imagesObj.filePath}}" bindtap="previewImages">
+        <image style="width:100%;height:100%" src="{{item.imagesObj.filePath}}"></image>
+      </view>
+      <!-- 删除按钮 -->
+      <view class="showItem-icon-box" data-index="{{index}}" bindtap="deleteImages">
+        <icon class="showItem-icon" type="clear" size="20" color="red"></icon>
+      </view>
+      <!-- 单选框 -->
+      <radio-group class="radio-group" data-index="{{index}}" bindchange="handleRadio">
+        <label class="checkbox">
+            <radio checked="{{item.imagesObj.main_image}}"/><text>是否显示为主图</text>
+          </label>
+      </radio-group>
+    </view>
+    <!-- 上传按钮+框 -->
+    <view class="uploader-btn" bindtap="uploaderImages">
+      <view class="uploader-btn-icon"></view>
+    </view>
+  </view>
+</view> 
+
+

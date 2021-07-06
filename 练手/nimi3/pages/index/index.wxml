@@ -1,0 +1,181 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+<view class="index-swiper">
+  <swiper previous-margin="10px" next-margin="10px" circular current interval="2000" current="{{swiperCurrent}}" bindchange="changesCurrent">
+    <swiper-item>
+      <navigator open-type="switchTab" url="/pages/serve/serve">
+        <image mode="widthFix" src="http://1691842.s81i.faiusr.com/2/101/AFEIwqFnEAIYACCx3PL6BSjomoDRBDDuBTjoAkBl.jpg"></image>
+      </navigator> 
+    </swiper-item>
+    <swiper-item>
+      <navigator>
+      <image mode="widthFix" src="http://1691842.s81i.faiusr.com/2/101/AFEIwqFnEAIYACCx3PL6BSjoz8LNAjDuBTjoAkBl.jpg"></image>
+    </navigator> 
+    </swiper-item>
+    <swiper-item>
+      <navigator open-type="switchTab" url="/pages/serve/serve">
+        <image mode="widthFix" src="http://1691842.s81i.faiusr.com/2/101/AFEIwqFnEAIYACCx3PL6BSjomoDRBDDuBTjoAkBl.jpg"></image>
+      </navigator> 
+    </swiper-item>
+  </swiper>
+</view>
+  <!-- 轮播图end -->
+  <!-- 一对一服务 -->
+<view class="index-serve">
+  <view class="title">一对一的顾问服务</view>
+  <view class="i-title">SERVICE</view>
+  <view class="index-item">
+      <view class="item-box">
+        <view class="li"><text class="iconfont icon-lipeichaxun"></text></view>
+        <view class="cont">理赔查询</view>
+      </view>
+      <view class="item-box">
+        <view class="li"><text class="iconfont icon-icon-gongshangbaoxianchaxun"></text></view>
+        <view class="cont">意外险查询</view>
+      </view>
+      <view class="item-box">
+        <view class="li"><text class="iconfont icon-baoxianlipeichaxun"></text></view>
+        <view class="cont">车险查询</view>
+      </view>
+      <view class="item-box">
+        <view class="li"><text class="iconfont icon-fuwuwangdian"></text></view>
+        <view class="cont">服务网点</view>
+      </view>
+  </view>
+</view>
+<!-- 查找 -->
+<view class="index-seach">
+  <lin-search-bar bg-color="#fff" 
+                placeholder="搜索" 
+                cancel-text=""> 
+  </lin-search-bar>
+</view>
+<!-- 查找end -->
+<!-- 关于我们 -->
+<view class="index-my">
+  <view class="title">关于我们</view>
+  <view class="i-title">ABOUT US</view>
+  <view class="content">
+    让保险更安心、更便捷、更实惠。让人们更健康、更长寿、更富足，保险成立于2006年12月，是经原中国保险监督管理委员会批准设立的一家全国性、股份制人寿保险公司，总部设在北京，下辖华夏久盈资产、久盈资本、华夏在线保险代理服务、五星在线保险销售等子公司。
+  </view>
+  <view class="btn">
+    <lin-button shape="square" plain="{{true}}" type="success">了解更多></lin-button>
+  </view>
+</view>
+<!-- 关于我们end -->
+<!-- 在线查询 -->
+<view class="index-select">
+  <view class="title">在线查询</view>
+  <lin-form name="loginForm" bind:linsubmit="submit" l-form-btn-class="l-form-btn-class">
+    <lin-form-item label="被保人姓名:" name="loginFormLoginId" rules="{{loginForm.loginIdRules}}">
+        <lin-input id="loginFormLoginId" value="{{loginForm.loginId}}" hide-label show-row="{{false}}"/>
+    </lin-form-item>
+    <lin-form-item label="保单号:" name="loginFormLoginId" rules="{{loginForm.loginIdRules}}">
+        <lin-input id="loginFormLoginId" value="{{loginForm.loginId}}" hide-label show-row="{{false}}"/>
+    </lin-form-item>
+    <lin-form-item label="被保人证件号:" name="loginFormLoginId" rules="{{loginForm.loginIdRules}}">
+        <lin-input id="loginFormLoginId" value="{{loginForm.loginId}}" hide-label show-row="{{false}}"/>
+    </lin-form-item>
+    <view slot="submit">
+        <lin-button type="success" size="long">查询</lin-button>
+    </view>
+</lin-form>
+</view>
+<!-- 在线查询end -->
+<!-- 核心产业 -->
+<view class="index-chanye">
+  <view class="title">核心产业</view>
+  <scroll-view scroll-x>
+    <view class="index-card">
+        <lin-card type="cover" 
+                image="/pages/image/1.png"
+                class="my-card-style"
+                title="保险"
+                style="padding:0rpx"
+                pad="{{false}}"
+                >
+            <view class="content">
+            个人和团体保险服务
+            </view>
+        </lin-card>
+        <lin-card type="cover" 
+                image="/pages/image/2.png"
+                title="资管"
+              >
+            <view class="content">
+            远见的财富管理专家
+            </view>
+        </lin-card>
+        <lin-card type="cover" 
+                image="/pages/image/2.png"
+                title="资管"
+              >
+            <view class="content">
+            远见的财富管理专家
+            </view>
+        </lin-card>
+        <lin-card type="cover" 
+                image="/pages/image/3.png"
+                title="资管"
+              >
+            <view class="content">
+            远见的财富管理专家
+            </view>
+        </lin-card>
+       
+  </view>
+</scroll-view>
+</view>
+<!-- 核心产业end -->
+<!-- 企业团队--->
+<view class="index-tuandui">
+  <view class="title">- 企业团队 -</view>
+  <view class="i-title">OUR TEAM</view>
+  <l-card type="primary"
+          plaintext="{{true}}">
+    <view class="content">
+      让保险更安心、更便捷、更实惠。让人们更健康、更长寿、更富足，保险成立于2006年12月，是经原中国保险监督管理委员会批准设立的一家全国性、股份制人寿保险公司，总部设在北京，下辖华夏久盈资产、久盈资本、华夏在线保险代理服务、五星在线保险销售等子公司。
+    </view>
+  </l-card>
+    <view class="img"><image src="/pages/image/4.png"></image></view>
+    <view class="msg">
+        <view class="msg-1">
+          <view class="datas">2230名</view>
+          <view class="names">行业优秀员工</view>
+        </view>
+        <view class="mas-1">
+          <view class="datas">2230名</view>
+          <view class="names">行业优秀员工</view>
+        </view>
+        <view class="msg-1">
+          <view class="datas">2230名</view>
+          <view class="names">行业优秀员工</view>
+        </view>
+    </view>
+    <!-- 聊天页面 -->
+    <view class="liaotian">
+      
+    </view>
+
+</view>
+<!-- 企业团队end -->
+<!-- 合作品牌 -->
+<view class="index-hezuo">
+  <view class="title">合作品牌</view>
+  <scroll-view scroll-x>
+  <view class="logo">
+    <image mode="widthFix" src="/pages/image/5.png"></image>
+    <image mode="widthFix" src="/pages/image/6.png"></image>
+    <image mode="widthFix" src="/pages/image/7.png" class="last"></image>
+  </view>
+  </scroll-view>
+ 
+</view>
+<!-- 合作品牌end -->
+
+
+
+
+
+</view>
